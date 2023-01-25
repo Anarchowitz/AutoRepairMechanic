@@ -1,3 +1,8 @@
+script_name("AutoRep")
+script_authors("Anarch")
+script_description("Script for Mechanics Arizona Role Play")
+script_version("1.0.1")
+script_properties("Worked")
 require "lib.moonloader"
 require "lib.samp.events"
 local sampev = require "lib.samp.events"
@@ -29,9 +34,9 @@ end
 
 function sampev.onServerMessage(color, text)
 	lua_thread.create(function()
-		if text:find("Вы предложили .+ починить транспорт за") then
+		if text:find("Г‚Г» ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГ«ГЁ .+ ГЇГ®Г·ГЁГ­ГЁГІГј ГІГ°Г Г­Г±ГЇГ®Г°ГІ Г§Г ") then
 			wait(30000)
-			sampAddChatMessage("Можно чинить!", main_color)
+			sampAddChatMessage("ГЊГ®Г¦Г­Г® Г·ГЁГ­ГЁГІГј!", main_color)
 		end
 	end)
 end
