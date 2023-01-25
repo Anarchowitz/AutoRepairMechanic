@@ -3,6 +3,7 @@ script_authors("Anarch")
 script_description("Script for Mechanics Arizona Role Play")
 script_version("1.0.1")
 script_properties("Worked")
+
 require "lib.moonloader"
 require "lib.samp.events"
 local sampev = require "lib.samp.events"
