@@ -11,7 +11,7 @@ local main_color = 0x698CC8
 
 function main()
 	if not isSampLoaded() or not isSampfuncsLoaded() then return end
-	while not isSampAvailable() do wait(100) end
+	while not isSampAvailable() do wait(3000) end
 
 	sampAddChatMessage("AutoRep loaded", main_color)
 	sampAddChatMessage("Author: Anarch", main_color)
