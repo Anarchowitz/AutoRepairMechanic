@@ -12,7 +12,8 @@ function main()
 	if not isSampLoaded() or not isSampfuncsLoaded() then return end
 	while not isSampAvailable() do wait(100) end
 
-	sampAddChatMessage("Mechanic Helper Loaded", main_color)
+	sampAddChatMessage("AutoRep loaded", main_color)
+	sampAddChatMessage("Author: Anarch", main_color)
 	
 	while true do
 		wait(0)
@@ -34,9 +35,9 @@ end
 
 function sampev.onServerMessage(color, text)
 	lua_thread.create(function()
-		if text:find("Âû ïðåäëîæèëè .+ ïî÷èíèòü òðàíñïîðò çà") then
+		if text:find("Вы предложили .+ починить транспорт за") then
 			wait(30000)
-			sampAddChatMessage("Ìîæíî ÷èíèòü!", main_color)
+			sampAddChatMessage("КД Закончилось!", main_color)
 		end
 	end)
 end
