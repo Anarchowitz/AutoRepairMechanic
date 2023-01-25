@@ -35,9 +35,9 @@ end
 
 function sampev.onServerMessage(color, text)
 	lua_thread.create(function()
-		if text:find("Вы предложили .+ починить транспорт за") then
+		if text:find("Р’С‹ РїСЂРµРґР»РѕР¶РёР»Рё .+ РїРѕС‡РёРЅРёС‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚ Р·Р°") then
 			wait(30000)
-			sampAddChatMessage("КД Закончилось!", main_color)
+			sampAddChatMessage("РљР” Р—Р°РєРѕРЅС‡РёР»РѕСЃСЊ!", main_color)
 		end
 	end)
 end
